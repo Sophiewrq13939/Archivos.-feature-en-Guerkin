@@ -1,0 +1,12 @@
+Feature: US09_Registrar diagnóstico realizado
+
+    Como agricultor y productor de campos agrícolas,
+    quiero guardar el resultado del diagnóstico,
+    para consultar la información posteriormente.
+
+Scenario: Registro del diagnóstico
+
+    Given que el agricultor obtuvo un diagnóstico válido
+    When selecciona la opción "Guardar diagnóstico"
+    Then el sistema debe almacenar el diagnóstico en el historial
+    And confirmar que el registro fue realizado correctamente
