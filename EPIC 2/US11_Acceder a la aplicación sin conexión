@@ -1,4 +1,4 @@
-Feature: US11 - Captura de fotografía del cultivo
+Feature: US11 - Acceder a la aplicación sin conexión 
     Como agricultor en zonas rurales con conectividad limitada,
     quiero acceder a las funcionalidades principales de la aplicación sin conexión a internet
     para utilizarla en el campo de cultivo. 
