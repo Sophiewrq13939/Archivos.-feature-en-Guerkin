@@ -4,7 +4,7 @@ Feature: US52_Obtener una facilidad de uso
     quiero que la aplicación sea fácil de usar,
     para realizar diagnósticos sin complicaciones.
 
-  Scenario Outline: Navegación sencilla
+  Scenario: Navegación sencilla
     Given que el usuario ingresa a la aplicación desde su dispositivo "<tipo_dispositivo>"
     When busca la opción para analizar una planta en la sección "<seccion_busqueda>"
     Then debe encontrarla de manera rápida y sencilla en menos de "<tiempo_maximo>" clics
