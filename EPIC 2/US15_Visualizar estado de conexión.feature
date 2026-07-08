@@ -4,7 +4,7 @@ Feature: US15_Visualizar estado de conexión
     quiero conocer el estado de conexión de la aplicación,
     para saber si estoy trabajando en modo online u offline.
 
-  Scenario Outline: Visualización del estado de red
+  Scenario: Visualización del estado de red
     Given que el agricultor utiliza la aplicación CultivIA en una red con estado "<red_actual>"
     When accede a cualquier sección principal como "<seccion_visitada>"
     Then el sistema muestra el estado actual de conectividad mediante el indicador "<indicador_visual>"
