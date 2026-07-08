@@ -8,7 +8,7 @@ Scenario: Registro del diagnóstico
 
     Given que el agricultor obtuvo un diagnóstico válido
     When selecciona la opción "Guardar diagnóstico"
-    Then el sistema debe almacenar el diagnóstico en el historial
+    Then el sistema almacena el resultado en el historial del usuario 
     And confirmar que el registro fue realizado correctamente
 
 Examples:
