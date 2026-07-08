@@ -4,7 +4,7 @@ Feature: US13_Guardar diagnósticos localmente
     quiero almacenar diagnósticos en el dispositivo,
     para conservar la información generada durante mi trabajo de campo.
 
-  Scenario Outline: Almacenamiento local
+  Scenario: Almacenamiento local
     Given que el agricultor ha obtenido un diagnóstico válido para el cultivo de "<cultivo>"
     When selecciona la opción "Guardar diagnóstico"
     Then el sistema almacena la información localmente en el dispositivo bajo el identificador "<id_diagnostico>"
