@@ -4,7 +4,7 @@ Feature: US41_Obtener informe detallado sobre características de las plantas
     quiero recibir un informe detallado sobre las características principales de mis cultivos,
     para identificar el tipo de planta cultivada, sus rasgos diferenciales y el cuidado ideal que necesita.
 
-Scenario Outline: Informe sobre el tipo de cultivo
+Scenario: Informe sobre el tipo de cultivo
 
     Given que el sistema muestra la opción "Informe"  como botón al tomar fotografías en el aplicativo cultivIA
     When el usuario presiona el botón "Informe"
