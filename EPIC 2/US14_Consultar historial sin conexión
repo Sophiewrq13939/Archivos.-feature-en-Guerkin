@@ -1,0 +1,10 @@
+Feature: US14 - Consultar historial sin conexión
+    Como agricultor en zonas rurales con conectividad limitada,
+    quiero consultar diagnósticos previamente almacenados
+    para acceder a la información cuando no disponga de internet 
+
+Scenario: US14 - Consultar historial sin conexión
+    Given que existen diagnósticos almacenados localmente en el dispositivo
+    When el agricultor accede a la sección de historial
+    Then el sistema debe mostrar los registros guardados
+    And permitir su consulta sin requerir conexión a internet
