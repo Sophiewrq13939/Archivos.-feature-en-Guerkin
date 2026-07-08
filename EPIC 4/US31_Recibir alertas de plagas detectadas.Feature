@@ -11,6 +11,6 @@ Feature: US31_Recibir alertas de plagas detectadas
     And sugiere la revisión inmediata del sector afectado
 
     Examples:
-      | cultivo  | plaga                 | sector_ubicacion |
+      | cultivo  | plaga                 | sector_ubicacion             |
       | "Mango"  | "Mosca de la fruta"   | "Lote B - Chulucanas, Piura" |
       | "Fresa"  | "Botrytis cinerea"    | "Parcela 4 - Lambayeque"     |
