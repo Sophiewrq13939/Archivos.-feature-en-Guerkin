@@ -6,10 +6,9 @@ Feature: US41_Obtener informe detallado sobre características de las plantas
 
 Scenario Outline: Informe sobre el tipo de cultivo
 
-    Given que el sistema muestra la opción "Informe" después de tomar una fotografía
+    Given que el sistema muestra la opción "Informe"  como botón al tomar fotografías en el aplicativo cultivIA
     When el usuario presiona el botón "Informe"
-    Then el sistema entrega un informe detallado sobre el cultivo "<cultivo>"
-    And muestra sus características principales y cuidados recomendados
+    Then el sistema entrega un informe detallado en base al tipo de "cultivo" como las características principales, rasgos diferenciales, entre otros
 
 Examples:
     | cultivo | característica principal         | cuidado recomendado              |
