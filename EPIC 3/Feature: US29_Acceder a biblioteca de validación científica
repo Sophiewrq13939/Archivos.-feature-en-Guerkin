@@ -1,0 +1,12 @@
+Feature: US29_Acceder a biblioteca de validación científica
+
+    Como estudiante universitario de ingeniería agrónoma,
+    quiero que los diagnósticos incluyan enlaces a una biblioteca de referencia botánica integrada,
+    para contrastar los resultados de la plataforma con literatura científica verificada.
+
+Scenario: Consulta integrada de literatura botánica validada
+
+    Given que estoy leyendo los resultados de una enfermedad detectada en el cultivo
+    When presiono el botón "Ver Referencia Científica"
+    Then el sistema abre una pestaña integrada
+    And muestra artículos académicos y fichas técnicas validadas sobre dicha patología vegetal
