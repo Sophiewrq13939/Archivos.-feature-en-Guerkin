@@ -4,7 +4,7 @@ Feature: US44_Visualizar fuentes académicas
     quiero acceder a fuentes académicas sobre el cuidado de las plantas,
     para adquirir conocimientos actualizados y avanzados sobre temas agrícolas.
 
-  Scenario Outline: Acceso a fuentes académicas
+  Scenario: Acceso a fuentes académicas
     Given que el sistema presenta la opción "Consultar fuentes académicas"
     When el usuario presiona la opción "Consultar fuentes académicas"
     And el usuario ingresa una entrada de "Nombre de fuente académica" 
