@@ -4,7 +4,7 @@ Feature: US36_Registrar acciones correctivas
     quiero registrar las acciones realizadas ante una plaga,
     para llevar un control de las medidas aplicadas.
 
-  Scenario Outline: Registro de acciones correctivas aplicadas
+  Scenario: Registro de acciones correctivas aplicadas
     Given que el trabajador ha terminado de aplicar un tratamiento contra la plaga "<plaga>" en el campo
     When ingresa las actividades realizadas como "<actividad_realizada>" en el formulario de la alerta
     Then el sistema almacena el registro en el historial de la parcela "<nombre_parcela>"
