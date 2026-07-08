@@ -4,7 +4,7 @@ Feature: US14_Consultar historial sin conexión
     quiero consultar diagnósticos previamente almacenados,
     para acceder a la información cuando no disponga de internet.
 
-  Scenario Outline: Consulta de historial offline
+  Scenario: Consulta de historial offline
     Given que existen diagnósticos almacenados localmente para la parcela "<nombre_parcela>"
     When el agricultor accede a la sección "Historial"
     Then el sistema muestra los registros guardados identificando la plaga "<plaga_guardada>"
