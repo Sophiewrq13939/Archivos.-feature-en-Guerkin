@@ -1,0 +1,12 @@
+Feature: US30_Compartir casos de estudio con docentes
+
+    Como estudiante universitario de ingeniería agrónoma,
+    quiero generar un enlace de acceso rápido para compartir un diagnóstico específico con mi docente,
+    para recibir retroalimentación académica.
+
+Scenario: Generación de link seguro para consulta externa
+
+    Given que estoy revisando un diagnóstico agrícola de interés para mi clase
+    When hago clic en el botón "Compartir Caso Académico" y selecciono "Copiar Enlace"
+    Then el sistema genera un link seguro
+    And permite a usuarios externos con permisos institucionales visualizar el registro
