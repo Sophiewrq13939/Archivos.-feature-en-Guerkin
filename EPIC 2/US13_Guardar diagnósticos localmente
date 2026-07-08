@@ -1,0 +1,10 @@
+Feature: US13 - Guardar diagnósticos localmente 
+    Como agricultor en zonas rurales con conectividad limitada,
+    quiero almacenar diagnósticos en el dispositivo
+    para conservar la información generada durante mi trabajo de campo. 
+
+Scenario: US13 - Guardar diagnósticos localmente
+    Given que el agricultor ha obtenido un diagnóstico válido
+    When selecciona la opción "Guardar diagnóstico"
+    Then el sistema debe almacenar la información localmente en el dispositivo
+    And conservar el diagnóstico para su consulta posterior
