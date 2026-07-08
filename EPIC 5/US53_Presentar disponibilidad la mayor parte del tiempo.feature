@@ -4,7 +4,7 @@ Feature: US53_Presentar disponibilidad la mayor parte del tiempo
     quiero que la aplicación esté disponible la mayor parte del tiempo,
     para acceder al servicio cuando lo necesite.
 
-  Scenario Outline: Acceso a la aplicación
+  Scenario: Acceso a la aplicación
     Given que el usuario desea ingresar a CultivIA desde una zona con conexión "<tipo_conexion>"
     When accede a la plataforma en el horario "<bloque_horario>"
     Then el sistema debe encontrarse operativo con un porcentaje de disponibilidad del "<uptime_esperado>"
