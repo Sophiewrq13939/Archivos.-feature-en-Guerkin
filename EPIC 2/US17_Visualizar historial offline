@@ -1,0 +1,11 @@
+Feature: US17 - Visualizar historial offline
+    Como agricultor en zonas rurales con conectividad limitada,
+    quiero que la aplicación sincronice automáticamente la información cuando recupere la conexión
+    para evitar procesos manuales 
+
+Scenario: US17 - Visualizar historial offline
+    Given que el agricultor no cuenta con conexión a internet
+    And existen diagnósticos guardados localmente en el dispositivo
+    When ingresa a la sección "Historial"
+    Then el sistema debe mostrar los diagnósticos almacenados
+    And permitir consultar la información sin requerir conexión a internet
