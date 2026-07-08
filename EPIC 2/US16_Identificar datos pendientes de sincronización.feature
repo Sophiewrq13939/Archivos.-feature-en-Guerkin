@@ -4,7 +4,7 @@ Feature: US16_Identificar datos pendientes de sincronización
     quiero visualizar qué registros aún no han sido sincronizados,
     para asegurar el respaldo de mi información.
 
-  Scenario Outline: Visualización de registros pendientes
+  Scenario: Visualización de registros pendientes
     Given que existen datos almacenados localmente pendientes de sincronización del tipo "<tipo_registro>"
     When el agricultor consulta sus registros
     Then el sistema identifica los registros pendientes de sincronización bajo el identificador "<id_registro>"
