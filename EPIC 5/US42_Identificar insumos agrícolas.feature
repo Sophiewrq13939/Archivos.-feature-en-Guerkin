@@ -4,9 +4,15 @@ Feature: US42_Identificar insumos agrícolas
     quiero identificar los insumos agrícolas necesarios según el tipo de producción,
     para fortalecer la salud de mis plantas cultivadas.
 
-Scenario: Búsqueda de insumos agrícolas
+Scenario Outline: Búsqueda de insumos agrícolas
 
-    Given que el usuario quiere conocer los insumos agrícolas necesarios para sus cultivos
-    When ingresa un tipo de insumo agrícola en la sección de búsqueda
-    Then el sistema muestra los insumos relacionados
-    And presenta sus características principales y modo de aplicación
+    Given que el usuario quiere conocer los insumos agrícolas necesarios
+    When ingresa el tipo de insumo "<insumo>"
+    Then el sistema muestra información relacionada al insumo agrícola
+    And presenta su uso recomendado para el cultivo
+
+Examples:
+    | insumo        | uso recomendado              |
+    | Fertilizante  | Mejorar nutrientes del suelo |
+    | Fungicida     | Controlar enfermedades       |
+    | Insecticida   | Controlar plagas             |
