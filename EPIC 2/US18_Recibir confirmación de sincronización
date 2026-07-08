@@ -1,0 +1,11 @@
+Feature: US18 - Recibir confirmación de sincronización
+    Como agricultor en zonas rurales con conectividad limitada,
+    quiero recibir una notificación cuando la sincronización finalice correctamente
+    para verificar que mis datos fueron respaldados.
+
+Scenario: US18 - Recibir confirmación de sincronización
+    Given que existen diagnósticos almacenados localmente pendientes de sincronización
+    And el dispositivo recupera la conexión a internet
+    When el sistema finaliza la sincronización de los datos
+    Then debe mostrar una notificación de sincronización exitosa
+    And confirmar que los diagnósticos fueron respaldados correctamente
