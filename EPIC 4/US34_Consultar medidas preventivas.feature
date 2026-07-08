@@ -11,6 +11,6 @@ Feature: US34_Consultar medidas preventivas
     And indica las medidas preventivas para la temporada actual de "<temporada>"
 
     Examples:
-      | cultivo | plaga_a_evitar        | temporada |
+      | cultivo | plaga_a_evitar         | temporada |
       | "Mango"  | "Mosca de la fruta"   | "Verano"  |
       | "Fresa"  | "Botrytis cinerea"    | "Invierno"|
