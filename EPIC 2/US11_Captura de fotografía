@@ -1,0 +1,9 @@
+Feature: US11 - Captura de fotografía del cultivo
+    Como agricultor en zonas rurales con conectividad limitada,
+    quiero acceder a las funcionalidades principales de la aplicación sin conexión a internet
+    para utilizarla en el campo de cultivo. 
+
+Scenario: US11 - Acceso a la aplicación sin conexión
+    Given que el dispositivo no cuenta con conexión a internet
+    When el agricultor abre la aplicación CultivIA
+    Then el sistema debe permitir acceder a las funcionalidades disponibles en modo offline
