@@ -4,7 +4,7 @@ Feature: US39_Recibir recordatorios de seguimiento
     quiero recibir recordatorios para revisar cultivos afectados,
     para verificar la efectividad de las acciones aplicadas.
 
-  Scenario Outline: Notificación de seguimiento del cultivo
+  Scenario: Notificación de seguimiento del cultivo
     Given que han pasado "<dias_transcurridos>" días desde que se registró una acción correctiva para "<plaga>"
     When el sistema ejecuta el control de seguimiento
     Then envía una notificación al trabajador al sector "<sector_ubicacion>"
