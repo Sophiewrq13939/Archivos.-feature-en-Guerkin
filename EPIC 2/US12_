@@ -1,0 +1,10 @@
+Feature: US12 - Realizar diagnóstico sin conexión 
+    Como agricultor en zonas rurales con conectividad limitada,
+    quiero realizar diagnósticos sin conexión a internet
+    para identificar posibles plagas o enfermedades en el campo. 
+
+Scenario: Captura correcta de una fotografía
+    Given que el dispositivo no cuenta con conexión a internet
+    When el agricultor solicita analizar una fotografía válida del cultivo
+    Then el sistema debe realizar el diagnóstico sin requerir conexión a internet
+    And mostrar el resultado disponible al usuario
