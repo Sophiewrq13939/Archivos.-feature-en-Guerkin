@@ -1,12 +1,18 @@
-Feature: US43_Publicar experiencia presentada en el cuidado de los cultivos
+Feature: US47_Visualizar tabla de anuncios sobre charlas y talleres
 
     Como agricultor y productor de un campo agrícola,
-    quiero publicar mi experiencia en el cuidado de mis cultivos con otros usuarios,
-    para compartir mi caso de estudio y los resultados obtenidos.
+    quiero visualizar anuncios sobre talleres y charlas agrícolas,
+    para capacitarme en estrategias actualizadas y buenas prácticas de cultivo.
 
-Scenario: Publicación de experiencia del usuario
+Scenario Outline: Consulta de charlas y talleres agrícolas
 
-    Given que el sistema muestra el mensaje "Caso resuelto con éxito"
-    When el usuario selecciona la opción "Compartir con usuarios de CultivIA"
-    Then el sistema publica la experiencia en la sección "Casos de otros usuarios"
-    And permite que otros usuarios visualicen el caso compartido
+    Given que el sistema presenta la sección "Tabla de anuncios sobre charlas y talleres"
+    When el usuario selecciona la capacitación "<capacitacion>"
+    Then el sistema muestra la información de la capacitación
+    And brinda el enlace de inscripción correspondiente
+
+Examples:
+    | capacitacion                 | modalidad | tema principal              |
+    | Taller de control de plagas  | Virtual   | Manejo de plagas            |
+    | Charla sobre cultivo de mango| Presencial| Prevención de enfermedades  |
+    | Taller de riego agrícola     | Virtual   | Uso eficiente del agua      | :D
