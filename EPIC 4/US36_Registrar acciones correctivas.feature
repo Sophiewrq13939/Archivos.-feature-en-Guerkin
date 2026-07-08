@@ -14,4 +14,3 @@ Feature: US36_Registrar acciones correctivas
       | plaga               | actividad_realizada                   | nombre_parcela |
       | "Mosca de la fruta" | "Colocación de trampas de cebo"       | "Lote B"       |
       | "Botrytis cinerea"  | "Aplicación de fungicida biológico"   | "Parcela 4"    |
-      
