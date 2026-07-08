@@ -4,12 +4,11 @@ Feature: US49_Recibir notificaciones sobre cambios drásticos de factores extern
     quiero recibir alertas sobre cambios drásticos en factores externos,
     para tomar medidas necesarias ante riesgos como clima extremo, desastres naturales o incendios.
 
-Scenario Outline: Notificación por cambios drásticos externos
+Scenario: Notificación por cambios drásticos externos
 
     Given que el sistema detecta un cambio externo de alto impacto en la zona del cultivo
     When se genera una alerta por "<factor_externo>"
-    Then el sistema muestra una notificación al usuario
-    And recomienda la acción preventiva "<accion_recomendada>"
+    Then el usuario toma las medidas necesarias para la modificación del cuidado de sus plantas proporcionado por el aplicativo
 
 Examples:
     | factor_externo      | nivel_riesgo | accion_recomendada                  |
