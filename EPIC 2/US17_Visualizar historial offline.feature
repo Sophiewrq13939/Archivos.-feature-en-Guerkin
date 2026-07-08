@@ -4,7 +4,7 @@ Feature: US17_Sincronizar información automáticamente
     quiero que la aplicación sincronice automáticamente la información cuando recupere la conexión,
     para evitar procesos manuales.
 
-  Scenario Outline: Sincronización automática
+  Scenario: Sincronización automática
     Given que existen registros pendientes de sincronización con el identificador "<id_registro>"
     And el dispositivo recupera la conexión a internet mediante "<tipo_red>"
     When la aplicación detecta conectividad disponible
