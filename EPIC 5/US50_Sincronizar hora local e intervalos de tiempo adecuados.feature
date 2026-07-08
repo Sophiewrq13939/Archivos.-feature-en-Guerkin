@@ -4,7 +4,7 @@ Feature: US50_Sincronizar hora local e intervalos de tiempo adecuados
     quiero sincronizar la aplicación con la hora local de mi zona de cultivo,
     para recibir notificaciones en intervalos adecuados según las estrategias recomendadas.
 
-Scenario Outline: Sincronización de hora local e intervalos
+Scenario: Sincronización de hora local e intervalos
 
     Given que el sistema presenta la opción "Sincronización de hora local e intervalos de tiempo"
     When el usuario configura la zona horaria "<zona_horaria>"
