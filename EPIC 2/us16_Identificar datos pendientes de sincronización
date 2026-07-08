@@ -1,0 +1,10 @@
+Feature: US16 - Identificar datos pendientes de sincronización
+    Como agricultor en zonas rurales con conectividad limitada,
+    quiero visualizar qué registros aún no han sido sincronizados
+    para asegurar el respaldo de mi información 
+
+Scenario: US16 - Identificar datos pendientes de sincronización
+    Given que existen registros almacenados localmente que aún no han sido sincronizados
+    When el agricultor consulta sus registros o historial de diagnósticos
+    Then el sistema debe mostrar qué datos están pendientes de sincronización
+    And permitir al usuario reconocer qué información todavía no ha sido respaldada
