@@ -12,4 +12,3 @@ Example:
       | registro      | cultivo   | cantidad | fecha      |
       | Cosecha       | Fresa     | 200 kg   | 2026-05-06 |
       | Riego         | Manzana   | 130 L    | 2026-05-03 |
-      
