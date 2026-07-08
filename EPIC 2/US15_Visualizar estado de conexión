@@ -4,7 +4,7 @@ Feature: US15 - Visualizar estado de conexión
     para saber si estoy trabajando en modo online u offline 
 
 Scenario: US15 - Visualizar estado de conexión
-Given que el agricultor está utilizando la aplicación CultivIA
-When accede a una sección principal de la aplicación
-Then el sistema debe mostrar el estado actual de conectividad
-And indicar si el usuario está trabajando en modo online u offline
+    Given que el agricultor está utilizando la aplicación CultivIA
+    When accede a una sección principal de la aplicación
+    Then el sistema debe mostrar el estado actual de conectividad
+    And indicar si el usuario está trabajando en modo online u offline
