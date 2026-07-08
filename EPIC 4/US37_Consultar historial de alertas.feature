@@ -4,7 +4,7 @@ Feature: US37_Consultar historial de alertas
     quiero revisar el historial de alertas recibidas,
     para analizar incidencias anteriores en los cultivos.
 
-  Scenario Outline: Consulta del historial de alertas
+  Scenario: Consulta del historial de alertas
     Given que existen alertas registradas previamente en el sistema para la parcela "<nombre_parcela>"
     When el trabajador selecciona la opción "Historial de Alertas"
     Then el sistema muestra un listado cronológico de las alertas anteriores
