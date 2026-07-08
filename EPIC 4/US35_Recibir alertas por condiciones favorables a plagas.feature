@@ -4,7 +4,7 @@ Feature: US35_Recibir alertas por condiciones favorables a plagas
     quiero recibir alertas cuando las condiciones climáticas favorezcan la aparición de plagas,
     para tomar acciones preventivas.
 
-  Scenario Outline: Alerta temprana por factores climáticos de riesgo
+  Scenario: Alerta temprana por factores climáticos de riesgo
     Given que los sensores ambientales reportan una humedad de "<humedad>" y una temperatura de "<temperatura>"
     When el sistema procesa los factores de riesgo
     Then envía una alerta preventiva al trabajador sobre la plaga "<plaga_probable>"
