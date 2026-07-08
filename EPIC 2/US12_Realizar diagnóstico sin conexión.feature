@@ -4,7 +4,7 @@ Feature: US12_Realizar diagnóstico sin conexión
     quiero realizar diagnósticos sin conexión a internet,
     para identificar posibles plagas o enfermedades en el campo.
 
-  Scenario Outline: Diagnóstico offline
+  Scenario: Diagnóstico offline
     Given que el dispositivo no cuenta con conexión a internet
     When el agricultor solicita analizar una fotografía válida del cultivo de "<cultivo>"
     Then el sistema realiza el diagnóstico utilizando el modelo local sin requerir conexión
